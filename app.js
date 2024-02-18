@@ -73,6 +73,38 @@ inputButton.addEventListener('click', function () {
     alert('vai currect copun code use koren');
   }
 });
+
+//--------- number check sectin------------
+let inputNumber = false;
+let Clickbtns = false;
+
+console.log(Clickbtns);
+console.log(inputNumber);
+
+if (inputNumber === true && Clickbtns === true) {
+  console.log('click korsi vahi');
+}
+const butClick = document.getElementsByClassName('buttonClick');
+for (const num of butClick) {
+  num.addEventListener('click', function (Clickbtns) {
+    if (num === num) {
+      Clickbtns = true;
+    }
+  });
+}
+
+const NamberInut = document.getElementById('NumberOfValue');
+NamberInut.addEventListener('change', function (inputNumber) {
+  if (NamberInut === NamberInut) {
+    inputNumber = true;
+  }
+});
+
+//modal click section-----
+const FinlanBtn = document.getElementById('filnledBtn');
+FinlanBtn.addEventListener('click', function () {
+  my_modal_5.showModal();
+});
 //----------all section used function ----------------
 
 function innerTextParsent(element) {
