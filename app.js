@@ -3,6 +3,12 @@ let sum = 0;
 let countDisreg = 0;
 for (const num of buttonClick) {
   num.addEventListener('click', function () {
+    if (sum === 4) {
+      alert('your limet is overs');
+      removeEventListener(num);
+    } else {
+    }
+
     const seatName = num.innerText;
     //set the button bgackgroun color
     num.classList.add('bg-[#1DD100]');
