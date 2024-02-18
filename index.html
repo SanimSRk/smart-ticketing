@@ -57,8 +57,9 @@
           for
           your long journeys! Say goodbye to boredom and
           hello to endless entertainment with this exciting game that's taking the travel world by storm.</p>
+
         <div class=" text-center pb-4 lg:pb-0 mt-8">
-          <button class="btn border-none bg-[#1DD100] text-white">Buy Tickets</button>
+          <a href=""> <button class="btn border-none bg-[#1DD100] text-white">Buy Tickets</button></a>
         </div>
 
       </div>
@@ -138,6 +139,7 @@
       </div>
 
     </section>
+
     <section class=" bg-[#F7F8F8] pb-6 rounded-t-[88px] border-t-2 border-green-500  ">
       <div class=" w-[85%] mx-auto  pt-[120px]">
         <div class="w-2/3 mx-auto text-center">
@@ -162,7 +164,7 @@
               <div class="  ">
                 <span class="text-green-500 rounded-lg bg-[#1DD10026] p-4 flex">
                   <h2><img src="image/seat-green.png" alt=""></h2>
-                  <h2 class="font-semibold text-[18px]"><span>40</span> Seats left </h2>
+                  <h2 class="font-semibold text-[18px]"><span id="TotalSet">40</span> Seats left </h2>
                 </span>
               </div>
             </div>
@@ -203,8 +205,9 @@
 
 
     </section>
+
     <!----set section styel------->
-    <section class="bg-[#F7F8F8]">
+    <section id="click_now" class="bg-[#F7F8F8]">
       <div class="w-[85%] mx-auto  bg-[#FFFFFF] ">
         <!----first  set section styel------->
         <div class="flex ">
@@ -272,19 +275,19 @@
 
             <div class=" bg-[#F7F8F8] p-8">
               <div class="flex justify-between border-b-2 border-dotted pb-6 ">
-                <h2 class="text-xl font-bold">Seat <span class="text-green-500 ">0</span></h2>
+                <h2 class="text-xl font-bold">Seat <span id="CountValue" class="text-green-500 ">0</span></h2>
                 <h2 class="text-xl font-bold">Class</h2>
                 <h2 class="text-xl font-bold ">Price</h2>
               </div>
               <!---push contner section -->
               <div class="flex justify-between border-b-2 mt-4">
                 <div id="SeatName">
-                  dasd
+
                 </div>
                 <div id="SeatClasse">
 
                 </div>
-                <div id="SeatPrice ">
+                <div id="SeatPrice">
 
                 </div>
               </div>
@@ -346,6 +349,7 @@
   <footer>
 
   </footer>
+  <script src="app.js"></script>
 </body>
 
 </html>
