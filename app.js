@@ -32,9 +32,41 @@ for (const num of buttonClick) {
     setInnerText('TotalSet', sumed);
 
     //----------- count the total price -----------
+    const totalPrice = innerTextParsent('TotalPriced');
+
+    const sumValue = sum * 550;
+    setInnerText('TotalPriced', sumValue);
+    //--------grind tottal price --------------
+    innerTextParsent('GrandTotalPrice');
+    const grindTotalPrice = setInnerText('GrandTotalPrice', sumValue);
   });
 }
+//--------input copun section --------
+const inputButton = document.getElementById('cardButton');
+inputButton.addEventListener('click', function () {
+  const inputCard = document.getElementById('inputCard').value;
+  if (inputCard === 'NEW15') {
+    const inputCardValue = innerTextParsent('TotalPriced');
+    const discount = parseInt(inputCardValue * 0.15);
+    setInnerText('DiscountPrice', discount);
 
+    const grindValue = parseInt(inputCardValue - discount);
+    setInnerText('GrandTotalPrice', grindValue);
+    const inputHidden = document.getElementById('inputHidden');
+    inputHidden.classList.add('hidden');
+  } else if (inputCard === 'Couple 20') {
+    const inputCardValue = innerTextParsent('TotalPriced');
+    const discount = parseInt(inputCardValue * 0.2);
+    setInnerText('DiscountPrice', discount);
+
+    const grindValue = parseInt(inputCardValue - discount);
+    setInnerText('GrandTotalPrice', grindValue);
+    const inputHidden = document.getElementById('inputHidden');
+    inputHidden.classList.add('hidden');
+  } else {
+    alert('vai currect copun code use koren');
+  }
+});
 //----------all section used function ----------------
 
 function innerTextParsent(element) {

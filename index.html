@@ -263,6 +263,48 @@
                 <button class="buttonClick btn px-12 font-semibold">D3</button>
                 <button class="buttonClick btn px-12 font-semibold">D4</button>
               </div>
+              <div class="flex items-center justify-between mt-5">
+                <h1>E</h1>
+                <button class="buttonClick btn px-12 font-semibold">E1</button>
+                <button class="buttonClick btn px-12 font-semibold">E2</button>
+                <button class="buttonClick btn px-12 font-semibold">E3</button>
+                <button class="buttonClick btn px-12 font-semibold">E4</button>
+              </div>
+              <div class="flex items-center justify-between mt-5">
+                <h1>F</h1>
+                <button class="buttonClick btn px-12 font-semibold">F1</button>
+                <button class="buttonClick btn px-12 font-semibold">F2</button>
+                <button class="buttonClick btn px-12 font-semibold">F3</button>
+                <button class="buttonClick btn px-12 font-semibold">F4</button>
+              </div>
+              <div class="flex items-center justify-between mt-5">
+                <h1>G</h1>
+                <button class="buttonClick btn px-12 font-semibold">G1</button>
+                <button class="buttonClick btn px-12 font-semibold">G2</button>
+                <button class="buttonClick btn px-12 font-semibold">G3</button>
+                <button class="buttonClick btn px-12 font-semibold">G4</button>
+              </div>
+              <div class="flex items-center justify-between mt-5">
+                <h1>H</h1>
+                <button class="buttonClick btn px-12 font-semibold">H1</button>
+                <button class="buttonClick btn px-12 font-semibold">H2</button>
+                <button class="buttonClick btn px-12 font-semibold">H3</button>
+                <button class="buttonClick btn px-12 font-semibold">H4</button>
+              </div>
+              <div class="flex items-center justify-between mt-5">
+                <h1>I</h1>
+                <button class="buttonClick btn px-12 font-semibold">I1</button>
+                <button class="buttonClick btn px-12 font-semibold">I2</button>
+                <button class="buttonClick btn px-12 font-semibold">I3</button>
+                <button class="buttonClick btn px-12 font-semibold">I4</button>
+              </div>
+              <div class="flex items-center justify-between mt-5">
+                <h1>J</h1>
+                <button class="buttonClick btn px-12 font-semibold">J1</button>
+                <button class="buttonClick btn px-12 font-semibold">J2</button>
+                <button class="buttonClick btn px-12 font-semibold">J3</button>
+                <button class="buttonClick btn px-12 font-semibold">J4</button>
+              </div>
 
             </div>
 
@@ -294,7 +336,7 @@
               <!---Total price section  styel -->
               <div class=" flex justify-between mt-3">
                 <h2 class="font-semibold">Total Price</h2>
-                <h2 class="font-semibold">BDT <span id="TotalPrice">0</span></h2>
+                <h2 class="font-semibold">BDT <span id="TotalPriced">0</span></h2>
               </div>
               <!---descount price section  styel -->
               <div class=" flex justify-between mt-3">
@@ -302,9 +344,10 @@
                 <h2 class="font-semibold">BDT <span id="DiscountPrice">0</span></h2>
               </div>
               <!---input price section  styel -->
-              <div class="bg-[#FFFFFF] px-2 mt-4 rounded-lg flex justify-between items-center w-full">
-                <input class="py-4 text-xl" type="text" placeholder="Have any copupon?">
-                <button class="btn text-xl text-white bg-[#1DD100]">Apply</button>
+              <div id="inputHidden" class="bg-[#FFFFFF] px-2 mt-4 rounded-lg flex justify-between items-center w-full">
+                <input id="inputCard" class="py-4 border-none outline-none text-xl" type="text"
+                  placeholder="Have any copupon?">
+                <button id="cardButton" class="btn text-xl text-white bg-[#1DD100]">Apply</button>
               </div>
               <!---grenTotal price section  styel -->
               <div class=" flex justify-between mt-4">
@@ -320,16 +363,16 @@
                 <input type="text" class="grow" placeholder="Enter your name" />
               </label>
 
-              <h2 class="font-bold mt-4">Passenger Name*</h2>
+              <h2 class="font-bold mt-4">Passenger Number*</h2>
 
               <label class="input input-bordered flex items-center gap-2 my-5">
-                <input type="number" class="grow" placeholder="Enter your phone number " />
+                <input type="number" id="NumberOfValue" class="grow" placeholder="Enter your phone number" />
               </label>
               <h2 class="font-bold my-4">Email Id</h2>
               <label class="input input-bordered flex items-center gap-2">
                 <input type="email" class="grow" placeholder="Enter your email id " />
               </label>
-              <button class="btn w-full mt-6 bg-[#1DD100] font-bold text-white">Next</button>
+              <button id="filnledBtn" class="btn w-full mt-6 bg-[#1DD100] font-bold text-white">Next</button>
 
               <div class="flex justify-around mt-6">
                 <h2><a class="underline" href=""> Terms and Conditions</a> </h2>
