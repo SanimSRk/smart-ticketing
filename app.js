@@ -8,7 +8,6 @@ for (const num of buttonClick) {
       removeEventListener(num);
     } else {
     }
-
     const seatName = num.innerText;
     //set the button bgackgroun color
     num.classList.add('bg-[#1DD100]');
@@ -75,30 +74,27 @@ inputButton.addEventListener('click', function () {
 });
 
 //--------- number check sectin------------
-let inputNumber = false;
-let Clickbtns = false;
+// let inputNumber = false;
+// let Clickbtns = false;
 
-console.log(Clickbtns);
-console.log(inputNumber);
+// if (inputNumber === true && Clickbtns === true) {
+//   console.log('click korsi vahi');
+// }
+// const butClick = document.getElementsByClassName('buttonClick');
+// for (const num of butClick) {
+//   num.addEventListener('click', function (Clickbtns) {
+//     if (num === num) {
+//       Clickbtns = true;
+//     }
+//   });
+// }
 
-if (inputNumber === true && Clickbtns === true) {
-  console.log('click korsi vahi');
-}
-const butClick = document.getElementsByClassName('buttonClick');
-for (const num of butClick) {
-  num.addEventListener('click', function (Clickbtns) {
-    if (num === num) {
-      Clickbtns = true;
-    }
-  });
-}
-
-const NamberInut = document.getElementById('NumberOfValue');
-NamberInut.addEventListener('change', function (inputNumber) {
-  if (NamberInut === NamberInut) {
-    inputNumber = true;
-  }
-});
+// const NamberInut = document.getElementById('NumberOfValue');
+// NamberInut.addEventListener('change', function (inputNumber) {
+//   if (NamberInut === NamberInut) {
+//     inputNumber = true;
+//   }
+// });
 
 //modal click section-----
 const FinlanBtn = document.getElementById('filnledBtn');
